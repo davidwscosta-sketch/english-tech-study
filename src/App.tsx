@@ -1,14 +1,27 @@
-import { APP_NAME, APP_TAGLINE } from './lib/constants';
+import { useState } from 'react';
+import { decks, getDeck } from './data/decks';
+import { useDarkMode } from './hooks/useDarkMode';
+import { Header } from './components/Header';
+import { DeckList } from './components/DeckList';
+import { StudySession } from './components/StudySession';
 
 function App() {
+  const { dark, toggle } = useDarkMode();
+  const [activeDeckId, setActiveDeckId] = useState<string | null>(null);
+
+  const activeDeck = activeDeckId ? getDeck(activeDeckId) : undefined;
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-4 bg-slate-50 p-6 text-center text-slate-900 dark:bg-slate-900 dark:text-slate-100">
-      <h1 className="text-3xl font-bold sm:text-4xl">{APP_NAME}</h1>
-      <p className="max-w-md text-slate-600 dark:text-slate-300">{APP_TAGLINE}</p>
-      <span className="rounded-full bg-emerald-100 px-3 py-1 text-sm font-medium text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200">
-        Etapa 1 — Fundação ✅
-      </span>
-    </main>
+    <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+      <Header dark={dark} onToggleTheme={toggle} />
+      <main className="mx-auto max-w-3xl px-4 py-6">
+        {activeDeck ? (
+          <StudySession deck={activeDeck} onExit={() => setActiveDeckId(null)} />
+        ) : (
+          <DeckList decks={decks} onSelect={setActiveDeckId} />
+        )}
+      </main>
+    </div>
   );
 }
 

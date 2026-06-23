@@ -42,8 +42,10 @@ O plano completo de construção, dividido em etapas com critérios de aprovaç�
 
 ## 📌 Status atual
 
-🟢 **Etapa 1 (Fundação) concluída** — projeto Vite + React + TypeScript + Tailwind rodando,
-com ESLint, Prettier, Vitest e CI no GitHub Actions. Próximo: Etapa 2 (MVP de flashcards).
+🟢 **Etapa 2 (MVP de flashcards) concluída** — app funcional com 6 baralhos de estudo
+(Claude Code + GitHub + vocabulário básico), cartas que viram, placar, tela de resultado
+e modo claro/escuro. Base Vite + React + TS + Tailwind, com ESLint, Prettier, Vitest e CI.
+Próximo: Etapa 3 (salvar progresso e revisão por repetição espaçada).
 
 ## 🚀 Como rodar localmente
 

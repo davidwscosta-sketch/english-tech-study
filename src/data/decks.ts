@@ -1,0 +1,407 @@
+import type { Deck } from '../types';
+
+/**
+ * Conteúdo-semente dos baralhos, extraído das trilhas de estudo
+ * (docs/conteudo/claude-code.md e docs/conteudo/github.md).
+ * Este conjunto cresce com o tempo.
+ */
+export const decks: Deck[] = [
+  {
+    id: 'claude-code-slash',
+    title: 'Claude Code — Slash commands',
+    emoji: '⌨️',
+    description: 'Os comandos com "/" mais usados no Claude Code.',
+    cards: [
+      {
+        id: 'cc-help',
+        front: '/help',
+        back: 'Lista todos os comandos disponíveis.',
+        example: 'Use quando esquecer um comando.',
+        level: 'iniciante',
+      },
+      {
+        id: 'cc-clear',
+        front: '/clear',
+        back: 'Limpa a conversa e o contexto.',
+        example: 'Use ao começar uma tarefa nova.',
+        level: 'iniciante',
+      },
+      {
+        id: 'cc-compact',
+        front: '/compact',
+        back: 'Resume a conversa longa para liberar contexto.',
+        example: 'Use quando o chat ficar muito longo.',
+        level: 'intermediario',
+      },
+      {
+        id: 'cc-init',
+        front: '/init',
+        back: 'Cria o arquivo CLAUDE.md documentando o projeto.',
+        example: 'Use uma vez, em projeto novo.',
+        level: 'intermediario',
+      },
+      { id: 'cc-model', front: '/model', back: 'Troca o modelo de IA usado.', level: 'iniciante' },
+      {
+        id: 'cc-config',
+        front: '/config',
+        back: 'Abre as configurações (tema etc.).',
+        level: 'iniciante',
+      },
+      {
+        id: 'cc-review',
+        front: '/review',
+        back: 'Revisa um pull request do GitHub.',
+        level: 'intermediario',
+      },
+      {
+        id: 'cc-code-review',
+        front: '/code-review',
+        back: 'Revisa o seu diff atual em busca de bugs.',
+        example: 'Use antes de commitar.',
+        level: 'intermediario',
+      },
+      {
+        id: 'cc-security',
+        front: '/security-review',
+        back: 'Procura falhas de segurança nas mudanças.',
+        level: 'intermediario',
+      },
+      {
+        id: 'cc-agents',
+        front: '/agents',
+        back: 'Gerencia subagentes especializados.',
+        level: 'intermediario',
+      },
+      {
+        id: 'cc-cost',
+        front: '/cost',
+        back: 'Mostra quanto a sessão consumiu.',
+        level: 'iniciante',
+      },
+      {
+        id: 'cc-resume',
+        front: '/resume',
+        back: 'Retoma uma conversa anterior.',
+        level: 'iniciante',
+      },
+      {
+        id: 'cc-loop',
+        front: '/loop',
+        back: 'Roda uma tarefa repetidamente num intervalo.',
+        example: '/loop 5m /code-review → revisa a cada 5 minutos.',
+        level: 'intermediario',
+      },
+    ],
+  },
+  {
+    id: 'claude-code-phrases',
+    title: 'Construindo um produto',
+    emoji: '🛠️',
+    description: 'Frases em inglês para construir um site/app.',
+    cards: [
+      {
+        id: 'ph-build',
+        front: "Let's build a web app from scratch.",
+        back: 'Vamos construir um app web do zero.',
+        level: 'iniciante',
+      },
+      {
+        id: 'ph-setup',
+        front: 'Set up the project structure first.',
+        back: 'Configure a estrutura do projeto primeiro.',
+        level: 'iniciante',
+      },
+      {
+        id: 'ph-fix',
+        front: 'Fix this bug in the login function.',
+        back: 'Conserte este bug na função de login.',
+        level: 'iniciante',
+      },
+      {
+        id: 'ph-refactor',
+        front: 'Refactor this code to make it cleaner.',
+        back: 'Refatore este código para deixá-lo mais limpo.',
+        level: 'intermediario',
+      },
+      {
+        id: 'ph-dark',
+        front: 'Add dark mode to the dashboard.',
+        back: 'Adicione modo escuro ao painel.',
+        level: 'iniciante',
+      },
+      {
+        id: 'ph-commit',
+        front: 'Commit the changes and push to the branch.',
+        back: 'Faça o commit das mudanças e envie para a branch.',
+        level: 'intermediario',
+      },
+      {
+        id: 'ph-deploy',
+        front: 'Deploy the app to production.',
+        back: 'Publique o app em produção.',
+        level: 'intermediario',
+      },
+      {
+        id: 'ph-pr',
+        front: 'Open a pull request for review.',
+        back: 'Abra um pull request para revisão.',
+        level: 'intermediario',
+      },
+      {
+        id: 'ph-tests',
+        front: 'Run the tests and make sure they pass.',
+        back: 'Rode os testes e garanta que eles passem.',
+        level: 'iniciante',
+      },
+      {
+        id: 'ph-explain',
+        front: 'Can you explain what this file does?',
+        back: 'Você pode explicar o que este arquivo faz?',
+        level: 'iniciante',
+      },
+    ],
+  },
+  {
+    id: 'github-spaces',
+    title: 'GitHub — Espaços (abas)',
+    emoji: '🗂️',
+    description: 'As áreas de um repositório no GitHub.',
+    cards: [
+      {
+        id: 'gs-code',
+        front: 'Code',
+        back: 'Código — os arquivos do repositório.',
+        level: 'iniciante',
+      },
+      {
+        id: 'gs-issues',
+        front: 'Issues',
+        back: 'Problemas / tarefas (bugs e ideias a fazer).',
+        level: 'iniciante',
+      },
+      {
+        id: 'gs-pr',
+        front: 'Pull requests',
+        back: 'Mudanças propostas para revisão.',
+        level: 'iniciante',
+      },
+      {
+        id: 'gs-actions',
+        front: 'Actions',
+        back: 'Automações de CI/CD (testes, build, deploy).',
+        level: 'intermediario',
+      },
+      {
+        id: 'gs-projects',
+        front: 'Projects',
+        back: 'Quadros tipo kanban para organizar tarefas.',
+        level: 'iniciante',
+      },
+      {
+        id: 'gs-discussions',
+        front: 'Discussions',
+        back: 'Conversas abertas da comunidade.',
+        level: 'iniciante',
+      },
+      {
+        id: 'gs-insights',
+        front: 'Insights',
+        back: 'Métricas — atividade e contribuidores.',
+        level: 'intermediario',
+      },
+      {
+        id: 'gs-settings',
+        front: 'Settings',
+        back: 'Configurações do repositório.',
+        level: 'iniciante',
+      },
+      {
+        id: 'gs-releases',
+        front: 'Releases',
+        back: 'Lançamentos — versões publicadas do software.',
+        level: 'intermediario',
+      },
+      {
+        id: 'gs-branches',
+        front: 'Branches',
+        back: 'Ramos — linhas de trabalho paralelas do código.',
+        level: 'intermediario',
+      },
+    ],
+  },
+  {
+    id: 'github-terms',
+    title: 'GitHub — Termos essenciais',
+    emoji: '🐙',
+    description: 'O vocabulário do dia a dia no GitHub.',
+    cards: [
+      {
+        id: 'gt-repo',
+        front: 'Repository (repo)',
+        back: 'Repositório — o projeto e seu histórico.',
+        level: 'iniciante',
+      },
+      {
+        id: 'gt-fork',
+        front: 'Fork',
+        back: 'Cópia do repositório na sua conta.',
+        level: 'iniciante',
+      },
+      {
+        id: 'gt-clone',
+        front: 'Clone',
+        back: 'Baixar o repositório para a sua máquina.',
+        level: 'iniciante',
+      },
+      {
+        id: 'gt-branch',
+        front: 'Branch',
+        back: 'Ramo — linha de desenvolvimento.',
+        level: 'iniciante',
+      },
+      { id: 'gt-commit', front: 'Commit', back: 'Mudança salva no histórico.', level: 'iniciante' },
+      {
+        id: 'gt-merge',
+        front: 'Merge',
+        back: 'Juntar uma branch em outra.',
+        level: 'intermediario',
+      },
+      {
+        id: 'gt-rebase',
+        front: 'Rebase',
+        back: 'Reaplicar commits sobre outra base.',
+        level: 'intermediario',
+      },
+      {
+        id: 'gt-pr',
+        front: 'Pull request (PR)',
+        back: 'Pedido de junção, aberto para revisão.',
+        level: 'iniciante',
+      },
+      {
+        id: 'gt-draft',
+        front: 'Draft',
+        back: 'Rascunho — PR ainda não pronto para revisão.',
+        level: 'intermediario',
+      },
+      {
+        id: 'gt-review',
+        front: 'Review',
+        back: 'Revisão do código por outra pessoa.',
+        level: 'iniciante',
+      },
+      {
+        id: 'gt-conflict',
+        front: 'Merge conflict',
+        back: 'Conflito quando duas mudanças se chocam.',
+        level: 'intermediario',
+      },
+      {
+        id: 'gt-milestone',
+        front: 'Milestone',
+        back: 'Marco — grupo de issues com um objetivo.',
+        level: 'intermediario',
+      },
+      {
+        id: 'gt-workflow',
+        front: 'Workflow',
+        back: 'Fluxo de automação (no Actions).',
+        level: 'intermediario',
+      },
+      {
+        id: 'gt-runner',
+        front: 'Runner',
+        back: 'Máquina que executa o workflow.',
+        level: 'intermediario',
+      },
+    ],
+  },
+  {
+    id: 'github-pr-phrases',
+    title: 'GitHub — Frases de revisão',
+    emoji: '💬',
+    description: 'Frases comuns ao revisar um pull request.',
+    cards: [
+      {
+        id: 'pr-lgtm',
+        front: 'LGTM (Looks Good To Me).',
+        back: 'Pra mim está ótimo.',
+        level: 'intermediario',
+      },
+      {
+        id: 'pr-test',
+        front: 'Could you add a test for this?',
+        back: 'Você pode adicionar um teste para isto?',
+        level: 'iniciante',
+      },
+      {
+        id: 'pr-rebase',
+        front: 'Please rebase onto main.',
+        back: 'Por favor, faça rebase na main.',
+        level: 'intermediario',
+      },
+      {
+        id: 'pr-changes',
+        front: 'This needs changes before merging.',
+        back: 'Isto precisa de mudanças antes do merge.',
+        level: 'intermediario',
+      },
+      {
+        id: 'pr-squash',
+        front: 'Can you squash your commits?',
+        back: 'Você pode juntar seus commits num só?',
+        level: 'intermediario',
+      },
+      {
+        id: 'pr-conflict',
+        front: 'Please resolve the merge conflict.',
+        back: 'Por favor, resolva o conflito de merge.',
+        level: 'intermediario',
+      },
+      {
+        id: 'pr-catch',
+        front: 'Good catch!',
+        back: 'Boa observação! / Bem visto!',
+        level: 'iniciante',
+      },
+      {
+        id: 'pr-comments',
+        front: 'I left a few comments on the diff.',
+        back: 'Deixei alguns comentários no diff.',
+        level: 'intermediario',
+      },
+    ],
+  },
+  {
+    id: 'vocab-basics',
+    title: 'Vocabulário básico de código',
+    emoji: '📘',
+    description: 'Termos fundamentais de programação e IA.',
+    cards: [
+      { id: 'vb-code', front: 'code', back: 'código', level: 'iniciante' },
+      { id: 'vb-bug', front: 'bug', back: 'erro / falha no código', level: 'iniciante' },
+      { id: 'vb-function', front: 'function', back: 'função', level: 'iniciante' },
+      { id: 'vb-variable', front: 'variable', back: 'variável', level: 'iniciante' },
+      { id: 'vb-loop', front: 'loop', back: 'laço / repetição', level: 'iniciante' },
+      { id: 'vb-array', front: 'array', back: 'vetor / lista', level: 'iniciante' },
+      { id: 'vb-database', front: 'database', back: 'banco de dados', level: 'iniciante' },
+      {
+        id: 'vb-query',
+        front: 'query',
+        back: 'consulta (a um banco de dados)',
+        level: 'intermediario',
+      },
+      {
+        id: 'vb-deploy',
+        front: 'deploy',
+        back: 'publicar (colocar no ar)',
+        level: 'intermediario',
+      },
+      { id: 'vb-prompt', front: 'prompt', back: 'instrução dada à IA', level: 'iniciante' },
+    ],
+  },
+];
+
+export function getDeck(id: string): Deck | undefined {
+  return decks.find((deck) => deck.id === id);
+}

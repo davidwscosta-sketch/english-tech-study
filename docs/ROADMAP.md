@@ -60,21 +60,24 @@ e o CI fica verde. ✅ Validado localmente (lint, format, testes 2/2 e build).
 
 ---
 
-## Etapa 2 — MVP de estudo (flashcards)
+## Etapa 2 — MVP de estudo (flashcards) ✅
 
 **Objetivo:** o núcleo funcional — estudar vocabulário com flashcards.
 
 **Entregáveis:**
 
-- [ ] Modelo de dados do card (termo EN, tradução PT, exemplo de uso, categoria, nível)
-- [ ] Conteúdo inicial em JSON a partir de [conteudo/claude-code.md](conteudo/claude-code.md)
-      (frases de contexto, slash commands, vocabulário por categoria)
-- [ ] Tela de flashcards (virar carta, marcar "sabia" / "não sabia")
-- [ ] Navegação entre cards de um baralho/categoria
-- [ ] Layout responsivo (funciona bem no celular e no desktop)
+- [x] Modelo de dados do card (termo EN, tradução PT, exemplo de uso, nível)
+- [x] Conteúdo inicial em código tipado a partir das trilhas
+      [claude-code.md](conteudo/claude-code.md) e [github.md](conteudo/github.md)
+      (6 baralhos, ~65 cartas)
+- [x] Tela de flashcards (carta que vira, marcar "Eu sabia" / "Revisar")
+- [x] Navegação entre cards de um baralho, com barra de progresso e placar
+- [x] Tela de resumo com nota (0–100) e classificação ao fim do baralho
+- [x] Modo claro/escuro persistente
+- [x] Layout responsivo (funciona bem no celular e no desktop)
 
-**Critério de aprovação:** dá para abrir uma categoria e estudar os cards de ponta a ponta
-no celular e no computador.
+**Critério de aprovação:** dá para abrir um baralho e estudar os cards de ponta a ponta
+no celular e no computador. ✅ Validado (11 testes, lint, build).
 
 > Telas-alvo do produto (6 áreas) e rotina diária dos 4 blocos: ver [CURRICULO.md](CURRICULO.md).
 
@@ -141,4 +144,4 @@ e usar offline.
 
 ## Próximo passo
 
-Etapas 0 e 1 concluídas. Próximo: iniciar a **Etapa 2 (MVP de flashcards)**.
+Etapas 0, 1 e 2 concluídas. Próximo: **Etapa 3 (progresso e revisão inteligente)**.

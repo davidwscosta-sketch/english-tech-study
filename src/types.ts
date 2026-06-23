@@ -20,3 +20,23 @@ export interface Deck {
   description: string;
   cards: Flashcard[];
 }
+
+/** Progresso de uma carta no sistema de repetição espaçada (Leitner). */
+export interface CardProgress {
+  /** Caixa de Leitner (1 = recente/difícil, 5 = dominada). */
+  box: number;
+  /** Timestamp (ms) em que a carta volta a ficar disponível para revisão. */
+  due: number;
+  /** Timestamp (ms) da última revisão. */
+  lastReviewed: number;
+  /** Quantas vezes a carta já foi revisada. */
+  seen: number;
+}
+
+/** Estado de progresso persistido do estudante. */
+export interface ProgressState {
+  /** Progresso por id de carta. */
+  cards: Record<string, CardProgress>;
+  /** Datas (YYYY-MM-DD) em que houve estudo, para calcular a sequência. */
+  studyDates: string[];
+}

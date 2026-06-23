@@ -6,10 +6,17 @@ import { SessionSummary } from './SessionSummary';
 interface StudySessionProps {
   deck: Deck;
   onExit: () => void;
+  onReview?: (cardId: string, known: boolean) => void;
 }
 
-export function StudySession({ deck, onExit }: StudySessionProps) {
+export function StudySession({ deck, onExit, onReview }: StudySessionProps) {
   const session = useStudySession(deck);
+
+  const handleMark = (known: boolean) => {
+    if (session.current) onReview?.(session.current.id, known);
+    if (known) session.markKnown();
+    else session.markUnknown();
+  };
 
   if (session.finished) {
     return (
@@ -65,14 +72,14 @@ export function StudySession({ deck, onExit }: StudySessionProps) {
       <div className="flex gap-3">
         <button
           type="button"
-          onClick={session.markUnknown}
+          onClick={() => handleMark(false)}
           className="flex-1 rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 font-semibold text-amber-800 transition hover:bg-amber-100 dark:border-amber-700 dark:bg-amber-950 dark:text-amber-200"
         >
           🔁 Revisar
         </button>
         <button
           type="button"
-          onClick={session.markKnown}
+          onClick={() => handleMark(true)}
           className="flex-1 rounded-xl border border-emerald-300 bg-emerald-50 px-4 py-3 font-semibold text-emerald-800 transition hover:bg-emerald-100 dark:border-emerald-700 dark:bg-emerald-950 dark:text-emerald-200"
         >
           ✅ Eu sabia

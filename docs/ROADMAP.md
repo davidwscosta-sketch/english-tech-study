@@ -83,19 +83,21 @@ no celular e no computador. ✅ Validado (11 testes, lint, build).
 
 ---
 
-## Etapa 3 — Progresso e revisão inteligente
+## Etapa 3 — Progresso e revisão inteligente ✅
 
 **Objetivo:** transformar em ferramenta de estudo real, com memória de progresso.
 
 **Entregáveis:**
 
-- [ ] Salvar progresso localmente (LocalStorage/IndexedDB)
-- [ ] Repetição espaçada simples (ex.: algoritmo tipo Leitner/SM-2 enxuto)
-- [ ] Quiz de múltipla escolha como modo alternativo de estudo
-- [ ] Tela de estatísticas (termos dominados, a revisar, sequência de dias)
+- [x] Salvar progresso localmente (localStorage, com hook `useProgress`)
+- [x] Repetição espaçada (sistema de caixas de Leitner, 5 níveis, em `lib/srs.ts`)
+- [x] "Revisão do dia" — estuda só as cartas vencidas em todos os baralhos
+- [x] Quiz de múltipla escolha como modo alternativo de estudo
+- [x] Tela de estatísticas (sequência de dias, cartas dominadas, a revisar, por baralho)
+- [x] Apagar progresso (com confirmação)
 
 **Critério de aprovação:** o progresso persiste entre sessões e os cards a revisar
-aparecem de acordo com o desempenho.
+aparecem de acordo com o desempenho. ✅ Validado (29 testes, lint, build).
 
 ---
 
@@ -144,4 +146,4 @@ e usar offline.
 
 ## Próximo passo
 
-Etapas 0, 1 e 2 concluídas. Próximo: **Etapa 3 (progresso e revisão inteligente)**.
+Etapas 0 a 3 concluídas. Próximo: **Etapa 4 (PWA e publicação)**.

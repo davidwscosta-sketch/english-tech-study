@@ -42,10 +42,11 @@ O plano completo de construção, dividido em etapas com critérios de aprovaç�
 
 ## 📌 Status atual
 
-🟢 **Etapa 2 (MVP de flashcards) concluída** — app funcional com 6 baralhos de estudo
-(Claude Code + GitHub + vocabulário básico), cartas que viram, placar, tela de resultado
-e modo claro/escuro. Base Vite + React + TS + Tailwind, com ESLint, Prettier, Vitest e CI.
-Próximo: Etapa 3 (salvar progresso e revisão por repetição espaçada).
+🟢 **Etapa 3 (progresso e revisão inteligente) concluída** — flashcards e quiz com
+**progresso salvo localmente**, **repetição espaçada** (Leitner), "Revisão do dia",
+**estatísticas** (sequência de dias, cartas dominadas) e modo claro/escuro. Base
+Vite + React + TS + Tailwind, com ESLint, Prettier, Vitest (29 testes) e CI.
+Próximo: Etapa 4 (PWA instalável e publicação).
 
 ## 🚀 Como rodar localmente
 

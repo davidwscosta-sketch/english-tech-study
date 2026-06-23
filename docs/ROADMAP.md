@@ -19,6 +19,12 @@ para a próxima etapa).
 | Persistência (MVP) | Local no dispositivo (LocalStorage/IndexedDB) |
 | Conteúdo (MVP) | Arquivos JSON versionados no repositório |
 | Deploy | Vercel ou GitHub Pages (gratuito) |
+| Foco do conteúdo | Inglês técnico de IA/TI, centrado no **Claude Code** |
+| IA avaliadora | **Heurística local** primeiro; API Claude depois (opcional) |
+
+> 📚 O **método de estudo e a estrutura de conteúdo** estão detalhados em
+> [CURRICULO.md](CURRICULO.md). A trilha-semente está em
+> [conteudo/claude-code.md](conteudo/claude-code.md).
 
 ---
 
@@ -58,13 +64,16 @@ e o CI fica verde.
 
 **Entregáveis:**
 - [ ] Modelo de dados do card (termo EN, tradução PT, exemplo de uso, categoria, nível)
-- [ ] Conjunto inicial de conteúdo em JSON (~50–100 termos, 2–3 categorias)
+- [ ] Conteúdo inicial em JSON a partir de [conteudo/claude-code.md](conteudo/claude-code.md)
+      (frases de contexto, slash commands, vocabulário por categoria)
 - [ ] Tela de flashcards (virar carta, marcar "sabia" / "não sabia")
 - [ ] Navegação entre cards de um baralho/categoria
 - [ ] Layout responsivo (funciona bem no celular e no desktop)
 
 **Critério de aprovação:** dá para abrir uma categoria e estudar os cards de ponta a ponta
 no celular e no computador.
+
+> Telas-alvo do produto (6 áreas) e rotina diária dos 4 blocos: ver [CURRICULO.md](CURRICULO.md).
 
 ---
 
@@ -104,6 +113,9 @@ e usar offline.
 
 **Entregáveis (priorizar depois):**
 - [ ] Mais categorias e mais termos por área (backend, frontend, DevOps, dados, cloud, segurança)
+- [ ] Textos guiados com glossário e biblioteca de mídia (vídeos/filmes) marcada por
+      **legenda PT** e nível, com dica de legenda dupla (Language Reactor)
+- [ ] IA avaliadora real via **API da Claude** (correção de frases, exercícios personalizados)
 - [ ] Áudio/pronúncia dos termos (Web Speech API ou áudios)
 - [ ] Gamificação (pontos, conquistas, metas diárias)
 - [ ] Busca e favoritos

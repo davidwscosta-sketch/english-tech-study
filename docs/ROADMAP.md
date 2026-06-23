@@ -101,19 +101,23 @@ aparecem de acordo com o desempenho. ✅ Validado (29 testes, lint, build).
 
 ---
 
-## Etapa 4 — PWA e publicação
+## Etapa 4 — PWA e publicação ✅
 
 **Objetivo:** acesso fácil em qualquer dispositivo, "instalável".
 
 **Entregáveis:**
 
-- [ ] Configurar PWA (manifest + service worker via vite-plugin-pwa)
-- [ ] Funcionar offline (conteúdo e progresso)
-- [ ] Ícones e tela de splash
-- [ ] Deploy automático (Vercel ou GitHub Pages) a cada merge na branch principal
+- [x] Configurar PWA (manifest + service worker via vite-plugin-pwa)
+- [x] Funcionar offline (assets pré-cacheados; progresso já é local)
+- [x] Ícones (192/512/maskable + apple-touch) e favicon SVG
+- [x] Deploy automático no **GitHub Pages** a cada push na `main`
+      (`.github/workflows/deploy.yml`)
 
 **Critério de aprovação:** dá para abrir a URL no celular, "adicionar à tela inicial"
-e usar offline.
+e usar offline. ✅ Build gera `sw.js` + `manifest.webmanifest`; deploy configurado.
+
+> ⚙️ Para o deploy funcionar, habilite **Settings → Pages → Source: GitHub Actions** no
+> repositório (uma única vez). A URL será `https://<usuário>.github.io/english-tech-study/`.
 
 ---
 
@@ -146,4 +150,4 @@ e usar offline.
 
 ## Próximo passo
 
-Etapas 0 a 3 concluídas. Próximo: **Etapa 4 (PWA e publicação)**.
+Etapas 0 a 4 concluídas. Próximo: **Etapa 5 (expansão de conteúdo e recursos)**.

@@ -42,11 +42,15 @@ O plano completo de construção, dividido em etapas com critérios de aprovaç�
 
 ## 📌 Status atual
 
-🟢 **Etapa 3 (progresso e revisão inteligente) concluída** — flashcards e quiz com
-**progresso salvo localmente**, **repetição espaçada** (Leitner), "Revisão do dia",
-**estatísticas** (sequência de dias, cartas dominadas) e modo claro/escuro. Base
-Vite + React + TS + Tailwind, com ESLint, Prettier, Vitest (29 testes) e CI.
-Próximo: Etapa 4 (PWA instalável e publicação).
+🟢 **Etapa 4 (PWA e publicação) concluída** — app **instalável** (PWA) com manifesto,
+service worker e uso **offline**, ícones próprios e **deploy automático no GitHub Pages**.
+Inclui flashcards, quiz, repetição espaçada (Leitner), estatísticas e modo claro/escuro.
+Base Vite + React + TS + Tailwind, com ESLint, Prettier, Vitest (29 testes) e CI.
+Próximo: Etapa 5 (expansão de conteúdo e recursos).
+
+> 🌐 **Publicação:** o deploy roda a cada push na `main`. Habilite uma única vez em
+> **Settings → Pages → Source: GitHub Actions**. URL:
+> `https://<usuário>.github.io/english-tech-study/`.
 
 ## 🚀 Como rodar localmente
 

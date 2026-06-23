@@ -41,6 +41,7 @@ Uma vez por semana: gravar 1 min de áudio explicando o trabalho em inglês simp
 - **Semana 3** — Infraestrutura / web (`server`, `client`, `framework`, `bandwidth`...)
 - **Semana 4** — Negócios digitais (`client`, `meeting`, `report`, `dashboard`...)
 - **Trilha contínua** — Claude Code (slash commands, fluxo de PR, deploy)
+- **Trilha contínua** — GitHub (espaços/abas, termos de PR e revisão)
 
 ---
 
@@ -53,6 +54,8 @@ Uma vez por semana: gravar 1 min de áudio explicando o trabalho em inglês simp
 5. **Automação** — workflow, trigger, deploy, integration, schedule
 6. **Claude Code** — commit, push, branch, pull request, merge, diff, repo (ver
    [conteudo/claude-code.md](conteudo/claude-code.md))
+7. **GitHub** — repository, fork, clone, issue, pull request, review, workflow, release
+   (espaços/abas + termos; ver [conteudo/github.md](conteudo/github.md))
 
 Cada palavra tem: **termo EN · tradução PT · frase de exemplo no contexto do usuário · categoria · nível.**
 

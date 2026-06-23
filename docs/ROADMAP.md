@@ -11,16 +11,16 @@ para a próxima etapa).
 
 ## Resumo das decisões
 
-| Tema | Decisão |
-|------|---------|
-| Objetivo | Estudo de **vocabulário técnico de TI** em inglês |
-| Plataforma | **Web responsiva / PWA** (celular + computador, mesma URL) |
-| Stack | React + TypeScript + Vite + Tailwind CSS |
-| Persistência (MVP) | Local no dispositivo (LocalStorage/IndexedDB) |
-| Conteúdo (MVP) | Arquivos JSON versionados no repositório |
-| Deploy | Vercel ou GitHub Pages (gratuito) |
-| Foco do conteúdo | Inglês técnico de IA/TI, centrado no **Claude Code** |
-| IA avaliadora | **Heurística local** primeiro; API Claude depois (opcional) |
+| Tema               | Decisão                                                     |
+| ------------------ | ----------------------------------------------------------- |
+| Objetivo           | Estudo de **vocabulário técnico de TI** em inglês           |
+| Plataforma         | **Web responsiva / PWA** (celular + computador, mesma URL)  |
+| Stack              | React + TypeScript + Vite + Tailwind CSS                    |
+| Persistência (MVP) | Local no dispositivo (LocalStorage/IndexedDB)               |
+| Conteúdo (MVP)     | Arquivos JSON versionados no repositório                    |
+| Deploy             | Vercel ou GitHub Pages (gratuito)                           |
+| Foco do conteúdo   | Inglês técnico de IA/TI, centrado no **Claude Code**        |
+| IA avaliadora      | **Heurística local** primeiro; API Claude depois (opcional) |
 
 > 📚 O **método de estudo e a estrutura de conteúdo** estão detalhados em
 > [CURRICULO.md](CURRICULO.md). A trilha-semente está em
@@ -33,6 +33,7 @@ para a próxima etapa).
 **Objetivo:** alinhar visão, escopo e direção técnica.
 
 **Entregáveis:**
+
 - [x] README com visão, público-alvo e stack
 - [x] Este roadmap com etapas e critérios
 
@@ -40,21 +41,22 @@ para a próxima etapa).
 
 ---
 
-## Etapa 1 — Fundação do projeto
+## Etapa 1 — Fundação do projeto ✅
 
 **Objetivo:** ter um projeto que roda localmente, com qualidade e CI configurados.
 
 **Entregáveis:**
-- [ ] Inicializar app Vite + React + TypeScript
-- [ ] Configurar Tailwind CSS
-- [ ] Configurar ESLint + Prettier
-- [ ] Configurar testes (Vitest + Testing Library)
-- [ ] CI no GitHub Actions (lint + testes em cada push/PR)
-- [ ] Estrutura de pastas definida (`src/components`, `src/data`, `src/lib`, etc.)
-- [ ] Tela inicial "Hello" rodando no navegador
+
+- [x] Inicializar app Vite + React + TypeScript
+- [x] Configurar Tailwind CSS
+- [x] Configurar ESLint + Prettier
+- [x] Configurar testes (Vitest + Testing Library)
+- [x] CI no GitHub Actions (lint + format + testes + build em cada push/PR)
+- [x] Estrutura de pastas definida (`src/components`, `src/data`, `src/lib`, etc.)
+- [x] Tela inicial "Hello" rodando no navegador
 
 **Critério de aprovação:** `npm run dev` abre o app, `npm test` e `npm run lint` passam,
-e o CI fica verde.
+e o CI fica verde. ✅ Validado localmente (lint, format, testes 2/2 e build).
 
 ---
 
@@ -63,6 +65,7 @@ e o CI fica verde.
 **Objetivo:** o núcleo funcional — estudar vocabulário com flashcards.
 
 **Entregáveis:**
+
 - [ ] Modelo de dados do card (termo EN, tradução PT, exemplo de uso, categoria, nível)
 - [ ] Conteúdo inicial em JSON a partir de [conteudo/claude-code.md](conteudo/claude-code.md)
       (frases de contexto, slash commands, vocabulário por categoria)
@@ -82,6 +85,7 @@ no celular e no computador.
 **Objetivo:** transformar em ferramenta de estudo real, com memória de progresso.
 
 **Entregáveis:**
+
 - [ ] Salvar progresso localmente (LocalStorage/IndexedDB)
 - [ ] Repetição espaçada simples (ex.: algoritmo tipo Leitner/SM-2 enxuto)
 - [ ] Quiz de múltipla escolha como modo alternativo de estudo
@@ -97,6 +101,7 @@ aparecem de acordo com o desempenho.
 **Objetivo:** acesso fácil em qualquer dispositivo, "instalável".
 
 **Entregáveis:**
+
 - [ ] Configurar PWA (manifest + service worker via vite-plugin-pwa)
 - [ ] Funcionar offline (conteúdo e progresso)
 - [ ] Ícones e tela de splash
@@ -112,6 +117,7 @@ e usar offline.
 **Objetivo:** crescer em conteúdo e qualidade de aprendizado.
 
 **Entregáveis (priorizar depois):**
+
 - [ ] Mais categorias e mais termos por área (backend, frontend, DevOps, dados, cloud, segurança)
 - [ ] Textos guiados com glossário e biblioteca de mídia (vídeos/filmes) marcada por
       **legenda PT** e nível, com dica de legenda dupla (Language Reactor)
@@ -135,4 +141,4 @@ e usar offline.
 
 ## Próximo passo
 
-Aprovar a **Etapa 0** e autorizar o início da **Etapa 1 (Fundação)**.
+Etapas 0 e 1 concluídas. Próximo: iniciar a **Etapa 2 (MVP de flashcards)**.

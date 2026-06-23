@@ -23,12 +23,12 @@ Foi consolidado a partir do planejamento do usuário e de uma estrutura anterior
 
 Um "micro-treino" diário, como um aquecimento. Pode ser feito no celular.
 
-| Bloco | Tempo | O que fazer |
-|-------|-------|-------------|
-| 1. Vocabulário tech | 4–5 min | 5 palavras novas, com tradução + frase no contexto do usuário |
-| 2. Leitura rápida | 3–4 min | 1 parágrafo curto (glossário/blog/manchete tech) |
-| 3. Escuta + repetição | 3–5 min | 2–3 min de vídeo com legenda, com *shadowing* (repetir em voz alta) |
-| 4. Micro-produção | 1–2 min | Escrever/falar 2–3 frases sobre o próprio dia em inglês |
+| Bloco                 | Tempo   | O que fazer                                                         |
+| --------------------- | ------- | ------------------------------------------------------------------- |
+| 1. Vocabulário tech   | 4–5 min | 5 palavras novas, com tradução + frase no contexto do usuário       |
+| 2. Leitura rápida     | 3–4 min | 1 parágrafo curto (glossário/blog/manchete tech)                    |
+| 3. Escuta + repetição | 3–5 min | 2–3 min de vídeo com legenda, com _shadowing_ (repetir em voz alta) |
+| 4. Micro-produção     | 1–2 min | Escrever/falar 2–3 frases sobre o próprio dia em inglês             |
 
 Uma vez por semana: gravar 1 min de áudio explicando o trabalho em inglês simples.
 

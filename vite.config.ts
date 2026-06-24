@@ -3,8 +3,8 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
-// Caminho base no GitHub Pages (https://<user>.github.io/english-tech-study/).
-const base = '/english-tech-study/';
+// Caminho base: subpasta no GitHub Pages, raiz nos demais hosts (ex.: preview Vercel).
+const base = process.env.GITHUB_PAGES === 'true' ? '/english-tech-study/' : '/';
 
 // https://vite.dev/config/
 export default defineConfig({
